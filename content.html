@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content - Mindful Minds</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(min.ijpeg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flexbox;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            max-width: 1000px;
+            width: 100%;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin: 50px auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+        nav ul li a:hover {
+            background-color: gray;
+            border-radius: 5px;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        
+        
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .content-title {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .content-description {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="content.html" class="dropbtn">Content</a>
+                <div class="dropdown-content">
+                    <a href="content.html" class="dropbtn">Content</a>
+                    <a href="#">Mindful Practices</a>
+                    <a href="#">Articles and Blogs</a>
+                    <a href="recommendations.html">Recommendations</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" onclick="window.location.href='mindful_practices_details.html'">
+        <br>
+        <div class="content-title">Mindful Practices</div>
+        <br>
+        <div class="content-description">
+            <p>Explore various mindful practices to bring peace and harmony to your daily life. Click for more details.</p>
+        </div>
+    </div>
+
+    <div class="container" onclick="window.location.href='recommendations_details.html'">
+        <br>
+        <div class="content-title">Recommendations</div>
+        <br>
+        <div class="content-description">
+            Discover recommendations for a healthier lifestyle. Click for more details and valuable insights.
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+        <p>&copy; 2024 Mindful Minds. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

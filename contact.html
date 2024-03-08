@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mindful Minds</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image:url(min.ijpeg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+        nav ul li a:hover {
+            background-color: gray;
+            border-radius: 5px;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .main-container {
+            display: flex;
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container:hover {
+            transform: scale(1.05);
+        }
+
+        /* Add more specific form styling as needed */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 22px); /* 100% width - padding */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            display: block;
+        }
+
+        input[type="submit"] {
+            background-color: gray;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* Re-use styles for nav and footer if needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Content</a>
+                    <a href="content.html" class="dropbtn">Content</a>
+                    <div class="dropdown-content">
+                        <a href="#">Mindful Practices</a>
+                        <a href="#">Recommendations</a>
+                    </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Form container -->
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to get in touch with us using the form below:</p>
+        <!-- Adjusted form -->
+        <form action="/submit-your-form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Optional: nav and footer code -->
+
+</body>
+</html>

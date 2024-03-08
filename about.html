@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mindful Minds</title>
+    <style>
+        body {
+            background-image: url(min.ijpeg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .container {
+           display: flex;
+           justify-content: space-between;
+           align-items: flex-start;
+           padding: 50px;
+           text-align: left;
+           background-color: rgba(255, 255, 255, 0.7);
+           border-radius: 20px;
+           max-width: 1000px;
+           width: 100%;
+           box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+           position: relative;
+           margin: 50px auto; /* Adjusted margin */
+        }
+
+       
+        
+            
+        nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2; 
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+        nav ul li a:hover {
+            background-color: gray;
+            border-radius: 5px;
+            color:white
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .about-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .about-content h2 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+       
+        footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1; /* Ensure the footer is above the container */
+}
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="content.html" class="dropbtn">Content</a>
+                <div class="dropdown-content">
+                    <a href="#">Mindful Practices</a>
+                    <a href="#">Recommendations</a>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="about-content">
+            <h2>About Mindful Minds</h2>
+            <p>Welcome to Mindful Minds, where we are dedicated to promoting a healthy lifestyle through mindfulness practices and valuable insights. Our mission is to help you achieve a harmonious balance between body and mind.</p>
+            <p>Explore articles, tips, and resources that empower you to cultivate a resilient mind and lead a healthier, happier life. Join us on this transformative journey towards holistic <well-being class=""></well-being></p>
+        </div>
+        <img src="pic.jpeh.png" alt="Mindful Minds" class="img">
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+        <p>&copy; 2024 Mindful Minds. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
